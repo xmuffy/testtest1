@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wyścigi Śmieciarek 3D</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="hud">
+      <h1>Wyścigi Śmieciarek 3D</h1>
+      <p><strong>Cel:</strong> odbierz odpady w poprawnej kolejności i zgarnij mniej reklamacji niż rywal.</p>
+      <p>Punkt trasy: <span id="nextPoint">1</span> / <span id="totalPoints">0</span></p>
+      <p>Twoje reklamacje: <span id="playerComplaints">0</span></p>
+      <p>Reklamacje rywala: <span id="aiComplaints">0</span></p>
+      <p>Ładunek: <span id="load">0</span>%</p>
+      <p>Przeszkody: czerwone strefy przepełnienia zwiększają reklamacje i spowalniają.</p>
+      <p class="controls">Sterowanie: W/S - gaz/hamulec, A/D - skręt, Spacja - szybkie opróżnienie (koszt 1 reklamacji).</p>
+      <button id="restartBtn">Nowy wyścig</button>
+      <p id="message"></p>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
